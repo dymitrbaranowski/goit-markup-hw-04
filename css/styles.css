@@ -243,6 +243,11 @@ a {
 
 .hero {
   background-color: var(--Dark);
+   background-color: hsla(0, 0%, 0%, 0.1);
+  background-image: url("https://ac.goit.global/img/photo.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
  
 }
@@ -421,7 +426,7 @@ Our advantages*/
 
 .footer {
   background-color: var(--Dark);
-  padding: 100px 0 100px 156px;
+  padding: 100px ;
 }
 
 .footer-text {
