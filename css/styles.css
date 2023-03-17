@@ -243,9 +243,8 @@ a {
 
 .hero {
   background-color: var(--Dark);
-   background-color: hsla(0, 0%, 0%, 0.1);
-  background-image: url("https://ac.goit.global/img/photo.jpg");
-  background-size: contain;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -421,7 +420,27 @@ Our advantages*/
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-scial-item {
+  width: 40px;
+  height: 40px;
+}
+.team-scial-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--Primary-Brand);
+  display: block;
+}
+
 /* Footer*/
 
 .footer {
