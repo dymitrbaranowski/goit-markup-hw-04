@@ -258,7 +258,7 @@ a {
 ite section
 Our advantages*/
 
-.container-advantages {
+.container-advantages-benefits {
   display: flex;
   padding: 0 auto;
   width: 1158px;
@@ -270,11 +270,13 @@ Our advantages*/
   align-items: center;
   width: 264px;
   height: 112px;
+  background-color: var(--Light);
+  border-radius: 4px;
 }
 .advantages-icon {
 }
 
-.advantages-list.list {
+.our-advantages-list.list.list {
   display: flex;
   gap: 24px;
   flex-basis: calc(100% / 4);
@@ -287,7 +289,7 @@ Our advantages*/
   padding: 0px;
   gap: 8px;
   width: 264px;
-  height: 104px;
+ 
 }
 .section-advantages {
   background-color: var(--B-g-color);
