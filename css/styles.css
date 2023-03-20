@@ -264,6 +264,16 @@ Our advantages*/
   width: 1158px;
 }
 
+.advantages-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+}
+.advantages-icon {
+}
+
 .advantages-list.list {
   display: flex;
   gap: 24px;
