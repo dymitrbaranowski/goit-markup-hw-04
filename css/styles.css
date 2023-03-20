@@ -240,6 +240,8 @@ a {
 }
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--Dark);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -493,7 +495,8 @@ Our advantages*/
   color: #8e8f99;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   background-color: var(--B-g-color);
   fill: var(--Pressed-state);
   color: var(--Pressed-state);
