@@ -63,9 +63,9 @@ button {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline-color: red;
+  /* outline-color: red;
   outline-width: 2px;
-  outline-style: groove;
+  outline-style: groove; */
 }
 
 .header-nav {
@@ -79,6 +79,7 @@ button {
 .page-header {
   border-bottom: 1px solid var(--Accent);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  min-width: 1158px;
 }
 
 .header-container {
@@ -117,7 +118,7 @@ button {
   padding-bottom: 24px;
 }
 
-.logo-name {
+.header-accent {
   color: var(--Dark);
 }
 
@@ -132,9 +133,6 @@ button {
   color: var(--Primary-Brand);
 }
 
-.accent {
-  color: var(--Dark);
-}
 /* Site address */
 
 address {
@@ -236,6 +234,7 @@ Our advantages*/
   background-color: var(--B-g-color);
   padding-top: 120px;
   padding-bottom: 120px;
+  min-width: 1158px;
 }
 
 .visually-hidden {
@@ -313,6 +312,7 @@ Our advantages*/
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--Light);
+  min-width: 1158px;
 }
 
 .team-title {
@@ -389,6 +389,7 @@ Our advantages*/
 .customers-container {
   padding-top: 120px;
   padding-bottom: 120px;
+  min-width: 1158px;
 }
 
 .customers-list {
@@ -426,21 +427,21 @@ Our advantages*/
 
 .footer {
   background-color: var(--Dark);
-  padding: 100px;
+  min-width: 1158px;
 }
-
-.footer .accent {
+.accent {
   color: var(--Light);
 }
 
 .footer-container {
   display: flex;
+  padding: 100px;
 }
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--Accent);
+  color: var(--Light);
   margin-top: 16px;
   width: 264px;
 }
