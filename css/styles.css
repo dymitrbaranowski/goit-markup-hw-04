@@ -68,12 +68,6 @@ button {
   outline-style: groove;
 }
 
-.header-container {
-  display: flex;
-  /* align-items: center; */
-  /* border-bottom: 1px solid --Accent; */
-}
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -85,6 +79,10 @@ button {
 .page-header {
   border-bottom: 1px solid var(--Accent);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  display: flex;
 }
 
 .logo {
@@ -173,7 +171,7 @@ address {
 
 /* Site hero*/
 
-.hero {
+/* .hero {
   max-width: 1440px;
   margin: 0 auto;
   background-color: var(--Dark);
@@ -186,11 +184,23 @@ address {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-}
+} */
 
 .hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--Dark);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero-title {
@@ -215,61 +225,17 @@ address {
   display: inline-block;
   padding: 16px 32px;
   margin-top: 48px;
-  margin-bottom: ;
+  /* margin-bottom: ; */
 }
 
 /* S
 ite section
 Our advantages*/
 
-.container-advantages-benefits {
-  display: flex;
-  padding: 0 auto;
-  width: 1158px;
-}
-
-.advantages-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  background-color: var(--Light);
-  border-radius: 4px;
-}
-.advantages-icon {
-}
-
-.our-advantages-list.list.list {
-  display: flex;
-  gap: 24px;
-  flex-basis: calc(100% / 4);
-}
-
-.text-item-advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
-  width: 264px;
-}
 .section-advantages {
   background-color: var(--B-g-color);
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.section-features {
-  color: var(--Dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.section-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .visually-hidden {
@@ -287,23 +253,46 @@ Our advantages*/
   line-height: 1.07;
 }
 
-.
+.advantages-list.list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc(100% / 4);
+}
+
+.text-item-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 264px;
+}
+
+.advantages-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+}
+.advantages-features {
+  color: var(--Dark);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.our-advantages-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
 /* Site sectin What are we doing*/
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--Dark);
+.doing-container {
+  width: 1158px;
+  padding-bottom: 120px;
 }
 
 .doing-title {
   color: var(--Dark);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -312,12 +301,6 @@ Our advantages*/
   margin-bottom: 72px;
 }
 
-.doing-container {
-  width: 1158px;
-  padding-bottom: 120px;
-}
-.doing-section {
-}
 .doing-list {
   display: flex;
   gap: 24px;
@@ -331,7 +314,23 @@ Our advantages*/
   padding-bottom: 120px;
   background-color: var(--Light);
 }
-.section-team {
+
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc(100% / 4);
+}
+
+.team-persone {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -341,23 +340,12 @@ Our advantages*/
   margin-bottom: 8px;
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-basis: calc(100% / 4);
-}
-
 .team-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 8px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   background-color: var(--B-g-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -365,31 +353,15 @@ Our advantages*/
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.team-item {
-  padding-top: 72 px;
-}
-
-.team-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
 
 .team-text {
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .team-social-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 
@@ -411,9 +383,6 @@ Our advantages*/
 .team-social-link:focus {
   background-color: var(--Pressed-state);
 }
-.team-soc-icon {
-  fill: var(--Accent);
-}
 
 /*   Customers  */
 
@@ -424,24 +393,12 @@ Our advantages*/
 
 .customers-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
   gap: 24px;
-  width: 1128px;
-  border-radius: 4px;
-  border-color: var(--Subtle-Text);
-  margin-top: 72px;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .customers-item {
   width: 168px;
   height: 88px;
-  border-radius: 4px;
-  border-color: solid var(--Subtle-Text);
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  color: #8e8f99;
 }
 .customers-link {
   display: block;
@@ -476,6 +433,10 @@ Our advantages*/
   color: var(--Light);
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -484,44 +445,21 @@ Our advantages*/
   width: 264px;
 }
 
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--Primary-Brand);
-  text-decoration: none;
-}
-
-.footer-container {
-  display: flex;
-}
-
 .footer-soc-media {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   margin-left: 120px;
 }
+
 .footer-soc-title {
-  display: inline-block;
-  font-family: 'Roboto';
-  font-style: normal;
+  color: rgba(255, 255, 255, 1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 1);
   margin-bottom: 16px;
 }
 
 .footer-soc-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
 
@@ -542,10 +480,6 @@ Our advantages*/
 .foter-soc-link:hover,
 .foter-soc-link:focus {
   background-color: var(--Success);
-}
-
-.footer-soc-icon {
-  fill: var(--B-g-color);
 }
 
 /* Portflio.html */
