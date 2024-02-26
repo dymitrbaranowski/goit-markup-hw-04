@@ -215,16 +215,10 @@ address {
 }
 
 .hero-link {
-  cursor: pointer;
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
-  display: inline-block;
   padding: 16px 32px;
   margin-top: 48px;
-  /* margin-bottom: ; */
 }
 
 /* S
@@ -486,17 +480,6 @@ Our advantages*/
 
 /* Portflio.html */
 
-.advantages-link {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-}
 /* Site Advantages */
 
 .benefits-advantages-container {
@@ -504,24 +487,12 @@ Our advantages*/
   padding-bottom: 66px;
 }
 
-.benefits-description {
-  padding: 32px 0 32px 16px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-}
 .advantages-container {
   display: flex;
   justify-content: center;
   margin-bottom: 66px;
 }
 
-.benefits-container {
-}
-.benefits-item {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .advantages-list-btn {
   display: flex;
   justify-content: center;
@@ -529,19 +500,10 @@ Our advantages*/
 }
 
 .advantages-link {
-  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  max-width: 116px;
   max-height: 48px;
-  background: var(--Light);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  flex: none;
-  flex-grow: 1;
 }
 
 .advantages-list-benefits {
@@ -552,15 +514,17 @@ Our advantages*/
   row-gap: 48px;
 }
 
-.advantages-list {
-  text-decoration: none;
-  display: block;
-}
-
-.advantages-list:hover,
-.advantages-list:focus {
+.benefits-description:hover,
+.benefits-description:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.benefits-description {
+  padding: 32px 0 32px 16px;
+  border-left: 1px solid var(--Accent);
+  border-right: 1px solid var(--Accent);
+  border-bottom: 1px solid var(--Accent);
 }
 
 .advantages-title {
